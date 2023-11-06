@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Lauri Ilkka</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Lauri Ilkka</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/lauriprofiilikuva.jpeg" alt="Lauri Ilkka profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Lauri Ilkka</h1>
+        <p class="section__text__p2">Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/lauri-ilkka-121987230/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Lapeee'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/kreikkakuva.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Front and backend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>3rd year ICT-engineer student<br />University of Applied sciences Oulu</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hey! I'm Lauri, a 3rd year ICT-engineer student from Oulu, Finland.
+              I'm passionate about backend development and I'm always looking for
+              new challenges. I'm currently looking for a business project or an
+              internship in the field of backend development. I also have 3+ years of experience in sales
+              and customer service. Which has given me a great set of skills to work in a team and to communicate with customers.
+              I'm eager to learn new things and I'm always looking for ways to improve myself.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C/C++</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java/kotlin</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git/github</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/freventhomepage.png"
+                alt="frevent app"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Frevent app</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openModal('project-modal-1')">More details</button>
+            </div>
+          </div>
+
+          <div class="project-modal" id="project-modal-1">
+            <div class="modal-content">
+              <h2>Frevent app Details</h2>
+              <p>App that connects you to other people. You can add other users to 
+                your friends list and chat with them. You can also create events and 
+                invite your friends to them. You can also see events that your friends 
+                have created. Companies can advertise their events and normal users can buy tickets to them.
+                All data is stored in a database. All logins are authorized and bearer tokens are used to authenticate users. The app is made with ReactJS and NodeJS.
+              </p>
+              <img
+                src="./assets/freventlogin.png"
+                alt="frevent"
+                class="about-pic"
+              />
+              <button class="btn btn-color-2 project-btn" onclick="closeModal('project-modal-1')">Close</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/climatehome.png"
+                alt="Project 2"
+                class="project-img"
+              />
+              <img
+                src="./assets/climatehome2.png"
+                alt="climate change app"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Climate change app</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openModal('project-modal-2')">More details</button>
+            </div>
+          </div>
+
+          <div class="project-modal" id="project-modal-2">
+            <div class="modal-content">
+              <h2>Climate change app details</h2>
+              <p>This project is web based REST API app, where users can observe 
+                climate change data from hundreds of thousands years ago to present day.
+                Frontend was made using ReactJS and backend was made using NodeJS and ExpressJS and react charts.
+                App's database was googles cloud app engine.
+                Link to app, but unfortunately googles cloud app engine isn't free so the databse isn't working anymore : <a href="https://climatechangeapp-370911.ew.r.appspot.com/N1">Climate change app</a>
+              </p>
+              <button class="btn btn-color-2 project-btn" onclick="closeModal('project-modal-2')">Close</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/arduinusafe.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Safe with arduino</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openModal('project-modal-3')">More details</button>
+            </div>
+          </div>
+
+          <div class="project-modal" id="project-modal-3">
+            <div class="modal-content">
+              <h2>Arduino Safe details</h2>
+              <p>Project made with arduino. Originally school project but modified it a little by myself.
+                The safe has a keypad where you can enter a 4 digit code to open the safe. 
+                The safe also has a motion sensor that detects if someone is trying to open the safe.
+                If someone tries to open the safe without the correct code, the safe will send a text message to the owner of the safe.
+                The safe also has a led light that lights up when the safe is opened.
+                Owned can also change the code of the safe by entering the old code and then entering the new code.
+                Project was made with arduino and C++.
+              </p>
+              <img
+              src="./assets/arduinosafe2.jpeg"
+              alt="frevent"
+              class="project-img2"
+            />
+              <button class="btn btn-color-2 project-btn" onclick="closeModal('project-modal-3')">Close</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/atm.png"
+                alt="Project 2"
+                class="project-img"
+              />
+              <img
+              src="./assets/atm2.png"
+              alt="Project 2"
+              class="project-img"
+            />
+            </div>
+            <h2 class="experience-sub-title project-title">ATM with C++</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openModal('project-modal-4')">More details</button>
+            </div>
+          </div>
+
+          <div class="project-modal" id="project-modal-4">
+            <div class="modal-content">
+              <h2>ATM details</h2>
+              <p>This project is ATM made with C++ and Qt Creator. 
+                The ATM has a login screen where you can login with your card number and pin code.
+                After you have logged in you can withdraw money, deposit money, transfer money to another account and check your balance.
+                Also i made it possible for user to login to bank with physical card by using RFID reader.
+                Database used in this project was mySQL. All logins are authorized and bearer tokens are used to authenticate users.
+              </p>
+              <button class="btn btn-color-2 project-btn" onclick="closeModal('project-modal-4')">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:lauri.ilkka@gmail.com">lauri.ilkka@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/lauri-ilkka-121987230/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Lauri Ilkka. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
